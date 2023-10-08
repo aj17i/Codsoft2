@@ -38,6 +38,7 @@ public class NumberGame {
                     System.out.println("Correct");
                     score++;
                     System.out.println("Your score is now " + score);
+                    randomElement = numbers[random.nextInt(numbers.length)];
                     break;
                 } else if (userGuess > randomElement) {
 
