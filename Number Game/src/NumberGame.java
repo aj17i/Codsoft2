@@ -26,7 +26,7 @@ public class NumberGame {
         System.out.println("Guess a random number between 1 and 100");
 
         while ("yes".equals(playing)) {
-
+            randomElement = numbers[random.nextInt(numbers.length)];
             int maxTries;
             for (maxTries = 1; maxTries <= tries; maxTries++) {
                 System.out.println("Enter your guess You have " + (tries - maxTries + 1) + " tries, guess carefully:");
